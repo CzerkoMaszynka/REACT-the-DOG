@@ -9,12 +9,12 @@ class RandomDog extends React.Component {
     } else {
       return (
         <>
-        <button onClick={onRandomBreedClick}>Wygeneruj zdjęcie</button>
-        <img src={randomImgUrl} alt="dog" />
+          <button onClick={onRandomBreedClick}>Wygeneruj zdjęcie</button>
+          <img src={randomImgUrl} alt="dog" />
         </>
       );
     }
   }
 }
 
-export default RandomDog
+export default RandomDog;

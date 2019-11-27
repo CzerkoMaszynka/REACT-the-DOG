@@ -1,10 +1,8 @@
 import React from "react";
 
-
-
 class UnderSearchBarImg extends React.Component {
   render() {
-    const {singleImgUrl} = this.props;
+    const { singleImgUrl } = this.props;
     // const {isLoading, error} = this.state;
     // if (error) {
     //   return <p>{error.message}</p>
@@ -12,15 +10,14 @@ class UnderSearchBarImg extends React.Component {
     // if (isLoading) {
     //   return <p>Loading...</p>;
     // } else {
-      console.log(singleImgUrl);
     return (
-        <div>
-          {singleImgUrl.map(dogImg => <img key={dogImg} src={dogImg} alt="dog" />)}
-        </div>
-      );
-  } 
+      <div>
+        {singleImgUrl.map(dogImg => (
+          <img key={dogImg} src={dogImg} alt="dog" />
+        ))}
+      </div>
+    );
+  }
 }
 
-
-
-export default UnderSearchBarImg
+export default UnderSearchBarImg;
