@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/REACT-the-DOG/static/css/main.869db6c0.chunk.css",
+    "main.js": "/REACT-the-DOG/static/js/main.a8ca9a13.chunk.js",
+    "main.js.map": "/REACT-the-DOG/static/js/main.a8ca9a13.chunk.js.map",
+    "runtime-main.js": "/REACT-the-DOG/static/js/runtime-main.6a900b64.js",
+    "runtime-main.js.map": "/REACT-the-DOG/static/js/runtime-main.6a900b64.js.map",
+    "static/js/2.f7e293b0.chunk.js": "/REACT-the-DOG/static/js/2.f7e293b0.chunk.js",
+    "static/js/2.f7e293b0.chunk.js.map": "/REACT-the-DOG/static/js/2.f7e293b0.chunk.js.map",
+    "index.html": "/REACT-the-DOG/index.html",
+    "precache-manifest.666797f9b7c3e78aad9b08453a097fac.js": "/REACT-the-DOG/precache-manifest.666797f9b7c3e78aad9b08453a097fac.js",
+    "service-worker.js": "/REACT-the-DOG/service-worker.js",
+    "static/css/main.869db6c0.chunk.css.map": "/REACT-the-DOG/static/css/main.869db6c0.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a900b64.js",
+    "static/js/2.f7e293b0.chunk.js",
+    "static/css/main.869db6c0.chunk.css",
+    "static/js/main.a8ca9a13.chunk.js"
+  ]
+}
