@@ -42,17 +42,15 @@ class App extends React.Component {
     fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
       .then(res => res.json())
       .then(data =>
-        this.setState({ dropDownImgUrl: data.message, breed: breed})
+        this.setState({ dropDownImgUrl: data.message, breed: breed })
       );
   };
 
   onDropDownBtnClick = () => {
     fetch(`https://dog.ceo/api/breed/${this.state.breed}/images/random`)
       .then(res => res.json())
-      .then(data =>
-        this.setState({ dropDownImgUrl: data.message })
-    );
-  }
+      .then(data => this.setState({ dropDownImgUrl: data.message }));
+  };
 
   setDogBreed = value => {
     this.setState({
@@ -63,29 +61,30 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <RandomDog
-          randomImgUrl={this.state.randomImgUrl}
-          onRandomBreedClick={this.onRandomBreedClick}
-        />
-        <BreedDropDown
-          dropDownImgUrl={this.state.dropDownImgUrl}
-          onDropDownClick={this.onDropDownClick}
-          breed={this.state.breed}
-          setDogBreed={this.setDogBreed}
-          breedList={keys}
-          onDropDownBtnClick ={this.onDropDownBtnClick}
-        />
-        <SearchBar 
-          breed={this.state.breed} 
-          setDogBreed={this.setDogBreed} />
-        <BreedList
-          breed={this.state.breed}
-          breedList={keys}
-          onInputBreedClick={this.onInputBreedClick}
-        />
-
-        {/* { this.state.singleImgUrl[0] &&  <UnderSearchBarImg singleImgUrl={this.state.singleImgUrl[0]} />} */}
-        <UnderSearchBarImg singleImgUrl={this.state.singleImgUrl} />
+          <div className="container">
+            <RandomDog
+              randomImgUrl={this.state.randomImgUrl}
+              onRandomBreedClick={this.onRandomBreedClick}
+            />
+            <BreedDropDown
+              dropDownImgUrl={this.state.dropDownImgUrl}
+              onDropDownClick={this.onDropDownClick}
+              breed={this.state.breed}
+              setDogBreed={this.setDogBreed}
+              breedList={keys}
+              onDropDownBtnClick={this.onDropDownBtnClick}
+            />
+            <SearchBar
+              breed={this.state.breed}
+              setDogBreed={this.setDogBreed}
+            />
+            <BreedList
+              breed={this.state.breed}
+              breedList={keys}
+              onInputBreedClick={this.onInputBreedClick}
+            />
+            <UnderSearchBarImg singleImgUrl={this.state.singleImgUrl} />
+          </div>
       </>
     );
   }

@@ -13,7 +13,7 @@ class UnderSearchBarImg extends React.Component {
     return (
       <div>
         {singleImgUrl.map(dogImg => (
-          <img key={dogImg} src={dogImg} alt="dog" />
+          <img className="m-1 imgCover" key={dogImg} src={dogImg} alt="dog" />
         ))}
       </div>
     );

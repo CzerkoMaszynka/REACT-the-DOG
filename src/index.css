@@ -1,4 +1,28 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: red;
+}
+
+.img-seize {
+  max-width:600px;
+  max-height: 600px;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.imgCover {
+  object-fit: cover;
+  height: 540px;
+  width: 540px;
+}
+
+.div-seize {
+  width: 600px;
+  height: 600px;
+}
+
+.inptPlaceholder::placeholder {
+  color: #28a745;
+  opacity: 1;
 }
