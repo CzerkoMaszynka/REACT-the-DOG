@@ -6,6 +6,7 @@ import BreedList from "./Components/BreedList";
 import UnderSearchBarImg from "./Components/UnderSearchBarImg";
 import RandomDog from "./Components/RandomDog";
 import BreedDropDown from "./Components/BreedDropDown";
+import NavBar from "./Components/NavBar"
 
 const keys = Object.keys(DogListAll);
 
@@ -61,11 +62,16 @@ class App extends React.Component {
   render() {
     return (
       <>
-          <div className="container">
+          <NavBar />
+          <div className="container containerMargin mb-5">
+            <h1 className="text-center">Hey! Welcome to THE-dog api.</h1>
+            <h2 className="text-success text-center w-50 mx-auto">I prepared a couple of simple buttons for you! Those buttons will let you to generate some cool dog photos</h2>
+            <p className="text-center mt-5">First button will let you to generate a random dog from any breed</p>
             <RandomDog
               randomImgUrl={this.state.randomImgUrl}
               onRandomBreedClick={this.onRandomBreedClick}
             />
+            <p className="text-center mt-5">Here you can select photos of specified breed</p>  
             <BreedDropDown
               dropDownImgUrl={this.state.dropDownImgUrl}
               onDropDownClick={this.onDropDownClick}
@@ -74,10 +80,12 @@ class App extends React.Component {
               breedList={keys}
               onDropDownBtnClick={this.onDropDownBtnClick}
             />
+             <p className="text-center mt-5">Type any specific breed in searchbar bellow and see what happens!</p>
             <SearchBar
               breed={this.state.breed}
               setDogBreed={this.setDogBreed}
             />
+           
             <BreedList
               breed={this.state.breed}
               breedList={keys}

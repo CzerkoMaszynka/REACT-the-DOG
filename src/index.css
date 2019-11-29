@@ -11,6 +11,10 @@ body {
   min-height: 300px;
 }
 
+.containerMargin {
+  margin-top: 120px;
+}
+
 .imgCover {
   object-fit: cover;
   height: 540px;
