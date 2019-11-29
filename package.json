@@ -1,7 +1,6 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://czerkomaszynka.github.io/REACT-the-DOG",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.0",
