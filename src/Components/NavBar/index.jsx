@@ -6,7 +6,7 @@ class NavBar extends React.Component {
       <nav class="navbar fixed-top navbar-light bg-success">
         <div className="container">
           <a className="navbar-brand text-warning" href="index.html">
-            THE-dog
+            Cute Dogs
           </a>
           <div className="d-flex">
                 <a
