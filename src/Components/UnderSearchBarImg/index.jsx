@@ -11,7 +11,7 @@ class UnderSearchBarImg extends React.Component {
     //   return <p>Loading...</p>;
     // } else {
     return (
-      <div>
+      <div style={{background: "#CEF3C9"}}>
         {singleImgUrl.map(dogImg => (
           <img className="m-1 imgCover" key={dogImg} src={dogImg} alt="dog" />
         ))}

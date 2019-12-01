@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background: #E3F8E1;
+  height: calc(100vh - 120px);
 }
 
 .img-seize {
@@ -17,8 +18,8 @@ body {
 
 .imgCover {
   object-fit: cover;
-  height: 540px;
-  width: 540px;
+  height: 547px;
+  width: 547px;
 }
 
 .div-seize {
@@ -30,3 +31,4 @@ body {
   color: #28a745;
   opacity: 1;
 }
+

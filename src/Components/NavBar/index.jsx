@@ -5,14 +5,14 @@ class NavBar extends React.Component {
     return (
       <nav class="navbar fixed-top navbar-light bg-success">
         <div className="container">
-          <a class="navbar-brand" href="index.html">
+          <a className="navbar-brand text-warning" href="index.html">
             THE-dog
           </a>
           <div className="d-flex">
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  class="nav-link"
+                  className="nav-link text-warning"
                   href="https://github.com/CzerkoMaszynka/REACT-the-DOG"
                 >
                   GitHub <span class="sr-only">(current)</span>
@@ -20,7 +20,7 @@ class NavBar extends React.Component {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  class="nav-link"
+                  className="nav-link text-warning"
                   href="https://app.netlify.com/teams/czerkomaszynka/sites"
                 >
                   More of my projects <span class="sr-only">(current)</span>

@@ -65,7 +65,7 @@ class App extends React.Component {
           <NavBar />
           <div className="container containerMargin mb-5">
             <h1 className="text-center">Hey! Welcome to THE-dog api.</h1>
-            <h2 className="text-success text-center w-50 mx-auto">I prepared a couple of simple buttons for you! Those buttons will let you to generate some cool dog photos</h2>
+            <h2 className="text-success text-center w-50 mx-auto">I prepared a couple of simple buttons for you! Those buttons will let you generate some cool dog photos.</h2>
             <p className="text-center mt-5">First button will let you to generate a random dog from any breed</p>
             <RandomDog
               randomImgUrl={this.state.randomImgUrl}
