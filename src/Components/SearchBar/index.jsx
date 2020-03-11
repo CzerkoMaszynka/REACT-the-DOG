@@ -1,14 +1,12 @@
 import React from "react";
 
-class SearchBar extends React.Component {
-  render() {
-    const { breed } = this.props;
+function SearchBar ({breed, onSetDogBreed}) {
     return (
       <div className="d-flex justify-content-center">
         <input
           className="border border-success d-block text-success inptPlaceholder m-1 p-1 w-50 rounded"
           autoComplete="off"
-          onChange={e => this.props.setDogBreed(e.target.value)}
+          onChange={e => onSetDogBreed(e.target.value)}
           value={breed}
           type="text"
           name="dogsearch"
@@ -17,6 +15,6 @@ class SearchBar extends React.Component {
       </div>
     );
   }
-}
+
 
 export default SearchBar;
